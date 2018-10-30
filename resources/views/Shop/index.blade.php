@@ -1,14 +1,15 @@
 @extends('Layout.default')
 
 @section('contents')
-    <table class="table table-bordered table-striped">
-        <tr>
+    <table class="table table-bordered table-striped ">
+        <tr >
+
             <th>商铺ID</th>
             <th>分类</th>
             <th>名称</th>
             <th>图片</th>
             <th>评分</th>
-            <th>起送金额</th>
+            <th >起送金额</th>
             <th>配送费</th>
             <th>店公告</th>
             <th>优惠信息</th>
@@ -38,7 +39,7 @@
                 <td>{{$shop->bao ? "是" : "否"}}</td>
                 <td>{{$shop->piao ? "是" : "否"}}</td>
                 <td>{{$shop->zhun ? "是" : "否"}}</td>
-                <td>@if($shop->status==1)
+                <td >@if($shop->status==1)
                         使用中
                     @elseif($shop->status==0)
                         等待审核

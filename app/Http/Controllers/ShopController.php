@@ -143,7 +143,7 @@ class ShopController extends Controller
     public function destroy(Shop $shop)
     {
         $shop->delete();
-        session()->flash('success','店铺信息成功');
+        session()->flash('success','店铺信息删除成功');
 
         return redirect()->route('shop.index');
         

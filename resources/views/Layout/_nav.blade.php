@@ -47,7 +47,7 @@
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                         <span class="glyphicon glyphicon-user"></span>{{ Auth::user()->name}}<span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="#">个人中心</a></li>
+                        <li><a href="http://admin.eleb.com/activity/show">平台活动</a></li>
                         <li><a href="{{route('shop.shop_edit',[Auth::user()])}}">商铺信息修改</a></li>
                         <li><a href="{{route('shop.user_edit',[Auth::user()])}}">个人账户信息修改</a></li>
                         <li role="separator" class="divider"></li>

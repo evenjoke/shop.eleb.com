@@ -26,7 +26,7 @@
             <label>商家分类</label>
             <select name="shop_category_id"  class="form-control">
             @foreach($shopCategorys as $shopCategory)
-               <option value="{{$shopCategory->id}}"  selected="selected"  >{{$shopCategory->name}}</option>
+               <option value="{{$shopCategory->id}}"  selected="selected" >{{$shopCategory->name}}</option>
             @endforeach
             </select>
             <label >商家名称</label>

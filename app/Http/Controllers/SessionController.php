@@ -37,7 +37,7 @@ class SessionController extends Controller
                 if (DB::table('users')->where('name', $request->name)->value('status') == 1) {
                     if (Auth::attempt(['name' => $request->name, 'password' => $request->password])) {
                         //认证通过 登录成功 提示登录成功 跳转到上一次访问的页面
-                        return redirect()->intended(route('shop.index'))->with('success', '登录成功');
+                        return redirect()->intended(route('menu_category.index'))->with('success', '登录成功');
                        //return "登陆成功";
                     } else {
                         //登录失败
